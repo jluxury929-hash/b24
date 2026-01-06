@@ -47,8 +47,8 @@ function broadcastLog(type, message) {
 if (cluster.isPrimary) {
     // === MASTER PROCESS ===
     console.log(`\x1b[33m╔════════════════════════════════════════════════════════╗\x1b[0m`);
-    console.log(`\x1b[33m║    ⚡ QUANTUM TITAN v57.1 | API SERVER ONLINE           ║\x1b[0m`);
-    console.log(`\x1b[33m║    PORT: ${process.env.PORT || 8080} | STRATEGY: COMPLEX ARBITRAGE         ║\x1b[0m`);
+    console.log(`\x1b[33m║    ⚡ QUANTUM TITAN v57.1 | API SERVER ONLINE            ║\x1b[0m`);
+    console.log(`\x1b[33m║    PORT: ${process.env.PORT || 8080} | STRATEGY: COMPLEX ARBITRAGE          ║\x1b[0m`);
     console.log(`\x1b[33m╚════════════════════════════════════════════════════════╝\x1b[0m`);
 
     // HTTP API Server
@@ -310,3 +310,4 @@ if (cluster.isPrimary) {
     }
 
     main().catch(console.error);
+}
